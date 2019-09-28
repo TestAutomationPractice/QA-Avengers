@@ -1,11 +1,21 @@
-@ignore
-Feature: re-usable feature to create a single Movie
+Feature: calling another feature file in a loop
 
-Scenario:
+Background:
+    * url baseUrl
 
-Given url baseUrl
-And path 'movie'
-And request { name: '#(name)' }
-When method post
-Then status 200
-Then print response
+    * def creator = read('movie_create.featuree')
+    # csv (will be converted to json)
+    * def movies = read('movie_list.csv')
+    * print movies
+    * def result = call creator kittens
+    *print result
+
+
+    # the above could be written in one line as follows
+    # * def result = call read('kitten-create.feature') read('kittens.json')
+
+    # * def created = $result[*].response
+
+
+
+
