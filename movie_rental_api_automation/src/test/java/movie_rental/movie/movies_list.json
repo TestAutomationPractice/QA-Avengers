@@ -1,0 +1,18 @@
+[
+	{
+		"﻿title": "QA_Avengers",
+		"description": "QA_Avengers",
+		"image": "https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fscottmendelson%2Ffiles%2F2019%2F03%2FAvengers-Chinese-Poster-D.jpg",
+		"director": "Sachin",
+		"rating": 4,
+		"categories": ["action","drama"]
+	  },
+	  {
+		"﻿title": "QA_Avengers1",
+		"description": "QA_Avengers",
+		"image": "https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fscottmendelson%2Ffiles%2F2019%2F03%2FAvengers-Chinese-Poster-D.jpg",
+		"director": "Sachin",
+		"rating": 4,
+	   "categories": ["action","drama"]
+	  }
+]
