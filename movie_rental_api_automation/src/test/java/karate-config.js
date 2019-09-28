@@ -6,9 +6,11 @@ var sessionId;
         env = 'dev';
     }
     var config = {
-        baseUrl: 'http://autothon-nagarro-backend-w07.azurewebsites.net',
+        baseUrl: 'https://autothon-nagarro-backend-e07.azurewebsites.net',
     }
     // 'callSingle' is guaranteed to run only once even across all threads
+    var result = karate.callSingle('classpath:login.feature', config);
+    config.sessionId = result.sessionId;
     karate.configure('connectTimeout', 30000);
     karate.configure('readTimeout', 100000);
 

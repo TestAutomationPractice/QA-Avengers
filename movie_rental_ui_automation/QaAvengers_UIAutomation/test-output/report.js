@@ -1,231 +1,608 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Java-Workspace/FreeCRMCucumberProject/src/main/java/Features/taggedHooks.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("addMovie.feature");
 formatter.feature({
   "line": 1,
-  "name": "Test Tagged Hoks",
+  "name": "Add a new Movie from Admin User",
   "description": "",
-  "id": "test-tagged-hoks",
+  "id": "add-a-new-movie-from-admin-user",
   "keyword": "Feature"
 });
-formatter.before({
-  "duration": 325300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 448900,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 270100,
-  "status": "passed"
-});
-formatter.scenario({
+formatter.scenarioOutline({
   "line": 4,
-  "name": "This is the first test",
+  "name": "Add a new Movie from Admin User",
   "description": "",
-  "id": "test-tagged-hoks;this-is-the-first-test",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@First"
-    }
-  ]
+  "id": "add-a-new-movie-from-admin-user;add-a-new-movie-from-admin-user",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline"
 });
 formatter.step({
   "line": 5,
-  "name": "this is the first step",
+  "name": "user has already logged in as Admin user",
   "keyword": "Given "
 });
 formatter.step({
   "line": 6,
-  "name": "this is the second step",
+  "name": "admin user clicks on Add Movie button",
   "keyword": "When "
 });
 formatter.step({
   "line": 7,
-  "name": "this is the third step",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "taggedHooksDefinition.this_is_the_first_step()"
-});
-formatter.result({
-  "duration": 228727500,
-  "status": "passed"
-});
-formatter.match({
-  "location": "taggedHooksDefinition.this_is_the_second_step()"
-});
-formatter.result({
-  "duration": 56500,
-  "status": "passed"
-});
-formatter.match({
-  "location": "taggedHooksDefinition.this_is_the_third_step()"
-});
-formatter.result({
-  "duration": 173600,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 55600,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 177200,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 131100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 155400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 247500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 155300,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 10,
-  "name": "This is the second test",
-  "description": "",
-  "id": "test-tagged-hoks;this-is-the-second-test",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 9,
-      "name": "@Second"
-    }
-  ]
+  "name": "user enters \"\u003ctitle\u003e\" , \"\u003cdirector\u003e\" , \"\u003cdescription\u003e\" , \"\u003ccategories\u003e\" , \"\u003curl\u003e\" and \"\u003crating\u003e\"",
+  "keyword": "And "
 });
 formatter.step({
+  "line": 8,
+  "name": "user clicks on Save Movie button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
+  "name": "movie is created by admin user",
+  "keyword": "Then "
+});
+formatter.examples({
   "line": 11,
-  "name": "this is the first step",
+  "name": "",
+  "description": "",
+  "id": "add-a-new-movie-from-admin-user;add-a-new-movie-from-admin-user;",
+  "rows": [
+    {
+      "cells": [
+        "title",
+        "description",
+        "categories",
+        "url",
+        "rating"
+      ],
+      "line": 12,
+      "id": "add-a-new-movie-from-admin-user;add-a-new-movie-from-admin-user;;1"
+    },
+    {
+      "cells": [
+        "Avengers",
+        "Heroes are made by the path they choose, not the pwer they are graced with",
+        "Thriller",
+        "www.qaAvengers.com",
+        "5"
+      ],
+      "line": 13,
+      "id": "add-a-new-movie-from-admin-user;add-a-new-movie-from-admin-user;;2"
+    }
+  ],
+  "keyword": "Examples"
+});
+formatter.scenario({
+  "line": 13,
+  "name": "Add a new Movie from Admin User",
+  "description": "",
+  "id": "add-a-new-movie-from-admin-user;add-a-new-movie-from-admin-user;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 5,
+  "name": "user has already logged in as Admin user",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 12,
-  "name": "this is the second step",
+  "line": 6,
+  "name": "admin user clicks on Add Movie button",
   "keyword": "When "
 });
 formatter.step({
-  "line": 13,
-  "name": "this is the third step",
+  "line": 7,
+  "name": "user enters \"Avengers\" , \"\u003cdirector\u003e\" , \"Heroes are made by the path they choose, not the pwer they are graced with\" , \"Thriller\" , \"www.qaAvengers.com\" and \"5\"",
+  "matchedColumns": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 8,
+  "name": "user clicks on Save Movie button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
+  "name": "movie is created by admin user",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "taggedHooksDefinition.this_is_the_first_step()"
+  "location": "addMovie.user_has_already_logged_in_as_Admin_user()"
 });
 formatter.result({
-  "duration": 824100,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "taggedHooksDefinition.this_is_the_second_step()"
+  "location": "addMovie.admin_user_clicks_on_Add_Movie_button()"
 });
 formatter.result({
-  "duration": 160200,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "taggedHooksDefinition.this_is_the_third_step()"
+  "arguments": [
+    {
+      "val": "Avengers",
+      "offset": 13
+    },
+    {
+      "val": "\u003cdirector\u003e",
+      "offset": 26
+    },
+    {
+      "val": "Heroes are made by the path they choose, not the pwer they are graced with",
+      "offset": 41
+    },
+    {
+      "val": "Thriller",
+      "offset": 120
+    },
+    {
+      "val": "www.qaAvengers.com",
+      "offset": 133
+    },
+    {
+      "val": "5",
+      "offset": 158
+    }
+  ],
+  "location": "addMovie.user_enters_and(String,String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 54100,
-  "status": "passed"
+  "status": "skipped"
 });
-formatter.after({
-  "duration": 171100,
-  "status": "passed"
+formatter.match({
+  "location": "addMovie.user_clicks_on_Save_Movie_button()"
 });
-formatter.after({
-  "duration": 158100,
-  "status": "passed"
+formatter.result({
+  "status": "skipped"
 });
-formatter.after({
-  "duration": 150400,
-  "status": "passed"
+formatter.match({
+  "location": "addMovie.movie_is_created_by_admin_user()"
 });
-formatter.before({
-  "duration": 142500,
-  "status": "passed"
+formatter.result({
+  "status": "skipped"
 });
-formatter.before({
-  "duration": 217100,
-  "status": "passed"
+formatter.uri("login.feature");
+formatter.feature({
+  "line": 1,
+  "name": "Login as Admin User",
+  "description": "",
+  "id": "login-as-admin-user",
+  "keyword": "Feature"
 });
-formatter.before({
-  "duration": 138800,
-  "status": "passed"
+formatter.scenarioOutline({
+  "line": 4,
+  "name": "Login as Admin User",
+  "description": "",
+  "id": "login-as-admin-user;login-as-admin-user",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 5,
+  "name": "user is already on Movie Rental Portal",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 6,
+  "name": "title of login page is React App",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 7,
+  "name": "user enters \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 8,
+  "name": "user clicks on login button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
+  "name": "user sucessfully logged in as Admin user",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "verify login result matches is correct",
+  "keyword": "And "
+});
+formatter.examples({
+  "line": 12,
+  "name": "",
+  "description": "",
+  "id": "login-as-admin-user;login-as-admin-user;",
+  "rows": [
+    {
+      "cells": [
+        "username",
+        "password"
+      ],
+      "line": 13,
+      "id": "login-as-admin-user;login-as-admin-user;;1"
+    },
+    {
+      "cells": [
+        "admin",
+        "password"
+      ],
+      "line": 14,
+      "id": "login-as-admin-user;login-as-admin-user;;2"
+    },
+    {
+      "cells": [
+        "admin2",
+        "password2"
+      ],
+      "line": 15,
+      "id": "login-as-admin-user;login-as-admin-user;;3"
+    },
+    {
+      "cells": [
+        "admin4",
+        "password6"
+      ],
+      "line": 16,
+      "id": "login-as-admin-user;login-as-admin-user;;4"
+    },
+    {
+      "cells": [
+        "admin5",
+        "password5"
+      ],
+      "line": 17,
+      "id": "login-as-admin-user;login-as-admin-user;;5"
+    }
+  ],
+  "keyword": "Examples"
+});
+formatter.scenario({
+  "line": 14,
+  "name": "Login as Admin User",
+  "description": "",
+  "id": "login-as-admin-user;login-as-admin-user;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 5,
+  "name": "user is already on Movie Rental Portal",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 6,
+  "name": "title of login page is React App",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 7,
+  "name": "user enters \"admin\" and \"password\"",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 8,
+  "name": "user clicks on login button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
+  "name": "user sucessfully logged in as Admin user",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "verify login result matches is correct",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "loginSteps.user_is_already_on_Movie_Rental_Portal()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "loginSteps.title_of_login_page_is_React_App()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "admin",
+      "offset": 13
+    },
+    {
+      "val": "password",
+      "offset": 25
+    }
+  ],
+  "location": "loginSteps.user_enters_and(String,String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "loginSteps.user_clicks_on_login_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "loginSteps.user_successfully_logged_in_as_admin_user()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.scenario({
+  "line": 15,
+  "name": "Login as Admin User",
+  "description": "",
+  "id": "login-as-admin-user;login-as-admin-user;;3",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 5,
+  "name": "user is already on Movie Rental Portal",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 6,
+  "name": "title of login page is React App",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 7,
+  "name": "user enters \"admin2\" and \"password2\"",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 8,
+  "name": "user clicks on login button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
+  "name": "user sucessfully logged in as Admin user",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "verify login result matches is correct",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "loginSteps.user_is_already_on_Movie_Rental_Portal()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "loginSteps.title_of_login_page_is_React_App()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "admin2",
+      "offset": 13
+    },
+    {
+      "val": "password2",
+      "offset": 26
+    }
+  ],
+  "location": "loginSteps.user_enters_and(String,String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "loginSteps.user_clicks_on_login_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "loginSteps.user_successfully_logged_in_as_admin_user()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 formatter.scenario({
   "line": 16,
-  "name": "This is the third test",
+  "name": "Login as Admin User",
   "description": "",
-  "id": "test-tagged-hoks;this-is-the-third-test",
+  "id": "login-as-admin-user;login-as-admin-user;;4",
   "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 15,
-      "name": "@Third"
-    }
-  ]
+  "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 17,
-  "name": "this is the first step",
+  "line": 5,
+  "name": "user is already on Movie Rental Portal",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 18,
-  "name": "this is the second step",
+  "line": 6,
+  "name": "title of login page is React App",
   "keyword": "When "
 });
 formatter.step({
-  "line": 19,
-  "name": "this is the third step",
+  "line": 7,
+  "name": "user enters \"admin4\" and \"password6\"",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 8,
+  "name": "user clicks on login button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
+  "name": "user sucessfully logged in as Admin user",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "taggedHooksDefinition.this_is_the_first_step()"
-});
-formatter.result({
-  "duration": 46900,
-  "status": "passed"
+formatter.step({
+  "line": 10,
+  "name": "verify login result matches is correct",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "taggedHooksDefinition.this_is_the_second_step()"
+  "location": "loginSteps.user_is_already_on_Movie_Rental_Portal()"
 });
 formatter.result({
-  "duration": 44800,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "taggedHooksDefinition.this_is_the_third_step()"
+  "location": "loginSteps.title_of_login_page_is_React_App()"
 });
 formatter.result({
-  "duration": 50200,
-  "status": "passed"
+  "status": "skipped"
 });
-formatter.after({
-  "duration": 46200,
-  "status": "passed"
+formatter.match({
+  "arguments": [
+    {
+      "val": "admin4",
+      "offset": 13
+    },
+    {
+      "val": "password6",
+      "offset": 26
+    }
+  ],
+  "location": "loginSteps.user_enters_and(String,String)"
 });
-formatter.after({
-  "duration": 35100,
-  "status": "passed"
+formatter.result({
+  "status": "skipped"
 });
-formatter.after({
-  "duration": 120200,
-  "status": "passed"
+formatter.match({
+  "location": "loginSteps.user_clicks_on_login_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "loginSteps.user_successfully_logged_in_as_admin_user()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.scenario({
+  "line": 17,
+  "name": "Login as Admin User",
+  "description": "",
+  "id": "login-as-admin-user;login-as-admin-user;;5",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 5,
+  "name": "user is already on Movie Rental Portal",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 6,
+  "name": "title of login page is React App",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 7,
+  "name": "user enters \"admin5\" and \"password5\"",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 8,
+  "name": "user clicks on login button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
+  "name": "user sucessfully logged in as Admin user",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "verify login result matches is correct",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "loginSteps.user_is_already_on_Movie_Rental_Portal()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "loginSteps.title_of_login_page_is_React_App()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "admin5",
+      "offset": 13
+    },
+    {
+      "val": "password5",
+      "offset": 26
+    }
+  ],
+  "location": "loginSteps.user_enters_and(String,String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "loginSteps.user_clicks_on_login_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "loginSteps.user_successfully_logged_in_as_admin_user()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 });

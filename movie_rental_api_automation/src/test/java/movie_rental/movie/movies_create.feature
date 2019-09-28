@@ -2,19 +2,18 @@ Feature: calling another feature file in a loop
 
 Background:
     * url baseUrl
-
-    * def creator = read('movie_create.featuree')
-    # csv (will be converted to json)
-    * def movies = read('movie_list.csv')
+    * def creator = read('movie_create.feature')
+    * def movies = read('movies_list.json')
     * print movies
-    * def result = call creator kittens
-    *print result
+    * def result = call creator movies
+    * print result
 
-
-    # the above could be written in one line as follows
-    # * def result = call read('kitten-create.feature') read('kittens.json')
-
-    # * def created = $result[*].response
+    Scenario: Check the movies added
+        # check movies list
+        Given path 'movies'
+        When method get
+        Then status 200
+        And def billie = response
 
 
 
